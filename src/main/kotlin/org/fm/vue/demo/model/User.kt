@@ -1,3 +1,3 @@
 package org.fm.vue.demo.model
 
-class User(val username: String, val password: String)
+data class User(var username: String?, var password: String?)
