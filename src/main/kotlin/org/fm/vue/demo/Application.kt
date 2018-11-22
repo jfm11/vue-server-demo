@@ -2,8 +2,8 @@ package org.fm.vue.demo
 
 import io.jsonwebtoken.SignatureAlgorithm
 import io.jsonwebtoken.security.Keys
-import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
 import javax.crypto.SecretKey
 
@@ -24,5 +24,5 @@ open class Application {
  * 程序入口
  */
 fun main(args: Array<String>) {
-    SpringApplication.run(arrayOf(Application::class.java), args)
+    runApplication<Application>(*args)
 }
