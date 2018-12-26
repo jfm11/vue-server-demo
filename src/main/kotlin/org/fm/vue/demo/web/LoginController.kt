@@ -13,6 +13,7 @@ import javax.crypto.SecretKey
 open class LoginController(private val secretKey: SecretKey) {
 
 
+
     @PostMapping("/login",
             consumes = [MediaType.APPLICATION_JSON_UTF8_VALUE],
             produces = [MediaType.APPLICATION_JSON_UTF8_VALUE])
